@@ -7,7 +7,7 @@
 
   vars:
     node_pool_config_details:
-      size: 1
+      size: 3
       placement_configs:
         - availability_domain: "{{ ad1 }}"
           subnet_id: "{{ ad1_subnet_id }}"
