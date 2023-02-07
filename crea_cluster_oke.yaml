@@ -103,6 +103,8 @@
       msg: "{{ shape_resultado }}"
 
   - set_fact:
+      node_image_name: "{{ shape_resultado.node_pool_options.images[0] }}"
+  - set_fact:
       node_shape: "{{ item }}"
     loop: "{{ shape_resultado.node_pool_options.shapes }}"
     when: 
@@ -129,9 +131,9 @@
 #    register: np_resultado
 
   - name: Create a node pool
-    oci_node_pool:
+    oracle.oci.oci_container_engine_node_pool:
       cluster_id: "{{ cluster_id }}"
-      compartment_id: "{{ cluster_compartment }}"
+      compartment_id: "{{ compartment_ocid }}"
       name: "{{ node_pool_name }}"
       kubernetes_version: "{{ k8s_version }}"
       node_image_name: "{{ node_image_name }}"
