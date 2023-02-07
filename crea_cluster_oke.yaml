@@ -148,7 +148,7 @@
 
 
   - set_fact:
-    node_pool_id: "{{ resultado.node_pool.id }}"
+      node_pool_id: "{{ resultado.node_pool.id }}"
 
 
 #  - debug:
