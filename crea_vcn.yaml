@@ -92,7 +92,7 @@
     oracle.oci.oci_network_security_list:
       name: "Load Balancers"
       compartment_id: "{{ compartment_ocid }}"
-      vcn_id: "{{ vcns_id }}"
+      vcn_id: "{{ vcn_id }}"
       ingress_security_rules: "{{ loaded_ingress.ingress_security_rules_for_lb }}"
       egress_security_rules: "{{ loaded_egress.egress_security_rules_for_lb }}"
     register: resultado
@@ -106,7 +106,7 @@
       availability_domain: "{{ item.ad }}"
       compartment_id: "{{ compartment_ocid }}"
       cidr_block: "{{ item.cidr }}"
-      vcn_id: "{{ vcns_id }}"
+      vcn_id: "{{ vcn_id }}"
       security_list_ids:
         - "{{ lb_sec_list_id }}"
     loop:
