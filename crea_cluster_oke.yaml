@@ -104,6 +104,7 @@
 
   - set_fact:
       node_image_name: "{{ shape_resultado.node_pool_options.images[0] }}"
+
   - set_fact:
       node_shape: "{{ item }}"
     loop: "{{ shape_resultado.node_pool_options.shapes }}"
@@ -153,8 +154,8 @@
 #  - debug:
 #      msg: "{{ np_resultado }}"
 
-  - set_fact:
-      node_pool_id: "{{ np_resultado.node_pool.id }}"
+#  - set_fact:
+#      node_pool_id: "{{ np_resultado.node_pool.id }}"
   
   
 #  - name: Crea kubeconfig
