@@ -40,9 +40,27 @@
       compartment_id: "{{ compartment_ocid }}"
       display_name: "{{ subnet3_name }}"
     register: resultado
-  
+
   - set_fact:
      ad3_subnet_id: "{{ resultado.subnets[0].id }}"
+
+  - name: Lista LB Subnet
+    oracle.oci.oci_network_subnet_facts:
+      compartment_id: "{{ compartment_ocid }}"
+      display_name: "{{ lb_subnet1_name }}"
+    register: resultado
+
+  - set_fact:
+      lb_subnet1_id: "{{ resultado.subnets[0].id }}"
+
+  - name: Lista LB Subnet
+    oracle.oci.oci_network_subnet_facts:
+      compartment_id: "{{ compartment_ocid }}"
+      display_name: "{{ subnet1_name }}"
+    register: resultado
+
+  - set_fact:
+      lb_subnet2_id: "{{ resultado.subnets[0].id }}"
 
   - name: Valida Ultima Version Disponible de k8s
     oracle.oci.oci_container_engine_cluster_options_facts:
