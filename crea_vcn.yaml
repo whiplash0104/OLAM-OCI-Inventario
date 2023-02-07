@@ -82,7 +82,7 @@
   
   - name: Agrega Reglas en Default Security List
     oracle.oci.oci_network_security_list:
-      id: "{{ sl_id }}"
+      id: "{{ vcn_resultado.vcn.default_route_table_id }}"
       ingress_security_rules: "{{ loaded_ingress.ingress_security_rules_for_default_sec_list }}"
       egress_security_rules:  "{{ loaded_egress.egress_security_rules_for_default_sec_list }}"
       purge_security_rules: 'no'
