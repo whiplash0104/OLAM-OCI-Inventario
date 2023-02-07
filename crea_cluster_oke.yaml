@@ -104,12 +104,13 @@
 
   - set_fact:
       node_image_name: "{{ shape_resultado.node_pool_options.images[0] }}"
+      node_shape: "{{ result.node_pool_options.shapes[2] }}"
 
-  - set_fact:
-      node_shape: "{{ item }}"
-    loop: "{{ shape_resultado.node_pool_options.shapes }}"
-    when: 
-      - '"VM.Standard" in item'
+#  - set_fact:
+#      node_shape: "{{ item }}"
+#    loop: "{{ shape_resultado.node_pool_options.shapes }}"
+#    when: 
+#      - '"VM.Standard" in item'
 
   - set_fact:
       node_pool_source_details:
