@@ -1,0 +1,15 @@
+- name: Crea y Configura Cluster OKE y VMs
+  hosts: localhost
+  gather_facts: false
+  connection: local
+
+  vars_files: vault.yaml
+
+  tasks:
+
+  - name: Crea Cluster OKE
+    oracle.oci.oci_container_engine_cluster:
+      compartment_id: "{{ compartment_ocid }}"
+      name: "{{ cluster_name }}"
+      force_create: true
+
