@@ -1,8 +1,8 @@
 ---
-plugin: oracle.oci.oci
+plugin: oci
 
 regions:
-  - us-ashburn-1
+  - "{{ region }}"
 
 compartments: 
   - compartment_ocid: "{{ compartment_id }}"
