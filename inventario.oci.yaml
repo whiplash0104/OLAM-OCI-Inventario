@@ -2,10 +2,10 @@
 plugin: oci
 
 regions:
-  - "{{ region }}"
+  - us-ashburn-1
 
 compartments: 
-  - compartment_ocid: "{{ compartment_id }}"
+  - compartment_ocid: "ocid1.compartment.oc1..aaaaaaaayxd4vtg4trrn43vnfoydozjkbcsjetceeo6q77m3faayibogooba"
     fetch_compute_hosts: True
 
 hostname_format_preferences:
