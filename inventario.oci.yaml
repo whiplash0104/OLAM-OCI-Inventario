@@ -8,7 +8,7 @@ compartments:
     fetch_compute_hosts: True
 
 hostname_format_preferences:
-  - "subnet_domain_name"
+  - "display_name"
   - "hostname_label"
   - "public_ip"
   - "private_ip"
