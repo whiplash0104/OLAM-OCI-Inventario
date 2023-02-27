@@ -1,14 +1,14 @@
 plugin: oracle.oci.oci
 
 regions:
-  - XX-XXXXXXX-X
+  - us-ashburn-1
 
 compartments: 
-  - compartment_ocid: "XXXXXXXXXXXXXX"
+  - compartment_ocid: "ocid1.compartment.oc1..aaaaaaaayxd4vtg4trrn43vnfoydozjkbcsjetceeo6q77m3faayibogoob"
     fetch_compute_hosts: True
 
 hostname_format_preferences:
-  - "display_name"
+  - "subnet_domain_name"
   - "hostname_label"
   - "public_ip"
   - "private_ip"
