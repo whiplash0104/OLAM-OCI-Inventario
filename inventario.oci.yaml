@@ -1,4 +1,4 @@
-plugin: oracle.oci.oci
+plugin: oci
 
 regions:
   - us-ashburn-1
