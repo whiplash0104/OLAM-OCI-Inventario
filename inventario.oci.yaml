@@ -1,10 +1,10 @@
-plugin: oci
+plugin: oracle.oci.oci
 
 regions:
   - us-ashburn-1
 
 compartments: 
-  - compartment_ocid: "ocid1.compartment.oc1..aaaaaaaayxd4vtg4trrn43vnfoydozjkbcsjetceeo6q77m3faayibogoob"
+  - compartment_ocid: "ocid1.compartment.oc1..aaaaaaaayxd4vtg4trrn43vnfoydozjkbcsjetceeo6q77m3faayibogooba"
     fetch_compute_hosts: True
 
 hostname_format_preferences:
