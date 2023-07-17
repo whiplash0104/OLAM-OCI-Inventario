@@ -4,7 +4,7 @@ regions:
   - us-ashburn-1
 
 compartments: 
-  - compartment_ocid: "ocid1.tenancy.oc1..aaaaaaaavl2ndgiiefoo2u4a7atlq2czcwyiu5zzb6rzwwpeyt5o2xmtaxwa"
+  - compartment_ocid: "ocid1.compartment.oc1..aaaaaaaayxd4vtg4trrn43vnfoydozjkbcsjetceeo6q77m3faayibogooba"
     fetch_compute_hosts: True
 
 hostname_format_preferences:
