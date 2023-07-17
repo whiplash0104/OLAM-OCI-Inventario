@@ -9,8 +9,3 @@ compartments:
 
 hostname_format_preferences:
   - "hostname_label"
-  #- "subnet_domain_name"
-  #- "dns_label"
-  #- "hostname_label"
-  #- "public_ip"
-  #- "private_ip"
