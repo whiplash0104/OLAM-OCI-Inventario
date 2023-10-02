@@ -8,4 +8,4 @@ compartments:
     fetch_compute_hosts: True
 
 hostname_format_preferences:
-  - "hostname_label"
+  - "public_ip"
